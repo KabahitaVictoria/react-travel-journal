@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color:#242424;
+  font-family: Inter, sans-serif;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+/* GENERAL STYLES */
+.bold {
+  font-weight: 700;
+}
+
+
+/* NAVIGATION */
+.nav {
+  background-color: #33a17c;
+  color: white;
+  -webkit-text-stroke: 0.02em;
+  -webkit-text-stroke-color: black;
+  width: 50%;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav img {
+  width: 25px;
+  height: 20px;
+  padding-right: 7px;
+}
+
+/* CARDS */
+.container {
+  width: 600px;
+  /* height: 250px; */
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  background-color: white;
+  padding: 40px;
+}
+
+.coverImg {
+  display: flex;
+  flex: 1;
+}
+
+.coverImg img {
+  width: 180px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1.5;
+}
+
+.info p, .info a {
+  font-size: 12px;
+}
+
+.info a {
+  color: #918E9B;
+}
+
+#maps2 {
+  display: none;
+}
+
+.country--map {
+  display: flex;
+  align-items: center;
+  width: 65%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.country--map img {
+  width: 15px;
+  padding-right: .15em;
+}
+
+.country {
+  margin-right: auto;
+}
+
+.location {
+  margin: 0;
+  padding: 0;
+  color: #2B283A;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 600px) {
+  * {
+    box-sizing: content-box;
+  }
+
+  .nav {
+    width: 100%;
+  }
+
+  .coverImg img {
+    width: 200px;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 80%;
+    padding: 40px;
+  }
+
+  .coverImg {
+    justify-content: center;
+  }
+
+  .info {
+    align-items: center;
+  }
+
+  .info p {
+    font-size: 10px;
+  }
+
+  .country {
+    margin-right: 0;
+  }
+
+  .country--map {
+    width: 70%;
+    justify-content: center;
+  }
+
+  .date--description {
+    /* border: 1px solid; */
+    text-align: center;
+  }
+
+  #maps1 {
+    display: none;
+    width: 0;
+  }
+
+  #maps2 {
+    display: block;
+  }
+}
