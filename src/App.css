@@ -7,6 +7,10 @@ body {
   font-family: Inter, sans-serif;
 }
 
+h1 {
+  text-align: center;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -31,8 +35,6 @@ body {
 .nav {
   background-color: #33a17c;
   color: white;
-  -webkit-text-stroke: 0.02em;
-  -webkit-text-stroke-color: black;
   width: 50%;
   margin-bottom: 1em;
   display: flex;

@@ -1,4 +1,6 @@
 export function Card(props) {
+  const upper = props.country.toUpperCase();
+
   return (
     <div className="container">
       <div className="coverImg">
@@ -6,8 +8,8 @@ export function Card(props) {
       </div>
       <div className="info">
         <div className="country--map">
-          <img src="../src/assets/visit.png" />
-          <p className="country">{props.item.country}</p>
+          <img src="https://img.icons8.com/ios-filled/50/33a17c/visit.png" />
+          <p className="country">{upper}</p>
           <a href="#" id="maps1">
             View on Google maps
           </a>
