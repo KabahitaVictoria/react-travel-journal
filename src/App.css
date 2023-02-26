@@ -3,12 +3,8 @@
 }
 
 body {
-  background-color:#242424;
+  background-color: #242424;
   font-family: Inter, sans-serif;
-}
-
-h1 {
-  text-align: center;
 }
 
 #root {
@@ -29,7 +25,6 @@ h1 {
 .bold {
   font-weight: 700;
 }
-
 
 /* NAVIGATION */
 .nav {
@@ -78,12 +73,13 @@ h1 {
   flex: 1.5;
 }
 
-.info p, .info a {
+.info p,
+.info a {
   font-size: 12px;
 }
 
 .info a {
-  color: #918E9B;
+  color: #918e9b;
 }
 
 #maps2 {
@@ -100,7 +96,7 @@ h1 {
 
 .country--map img {
   width: 15px;
-  padding-right: .15em;
+  padding-right: 0.15em;
 }
 
 .country {
@@ -110,7 +106,7 @@ h1 {
 .location {
   margin: 0;
   padding: 0;
-  color: #2B283A;
+  color: #2b283a;
 }
 
 /* RESPONSIVENESS */
@@ -166,5 +162,9 @@ h1 {
 
   #maps2 {
     display: block;
+  }
+
+  h1 {
+    text-align: center;
   }
 }

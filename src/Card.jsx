@@ -1,5 +1,5 @@
 export function Card(props) {
-  const upper = props.country.toUpperCase();
+  const upper = props.item.country.toUpperCase();
 
   return (
     <div className="container">

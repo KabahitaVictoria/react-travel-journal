@@ -1,4 +1,4 @@
-const data = [
+export default [
   {
     id: 1,
     coverImg: "https://source.unsplash.com/WLxQvbMyfas",
@@ -28,4 +28,3 @@ const data = [
   },
 ];
 
-export default data;
